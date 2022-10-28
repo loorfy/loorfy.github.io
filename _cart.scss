@@ -1,0 +1,188 @@
+.top_cart {
+    height: 400px;
+    background-image: url(img/cart_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cart {
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+
+    &_content {
+        grid-column: span 8;
+    }
+
+    &_name_box {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        align-items: center;
+        color: #000000;
+    }
+
+    &_item {
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 32px;
+        justify-items: end;
+        margin-top: 14px;
+    }
+
+    &_left {
+        grid-column: span 2;
+        height: 173px;
+        width: 173px;
+
+        &_img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &_catalog_link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 210%;
+        text-decoration-line: underline;
+        color: #000000;
+    }
+
+    &_info {
+        grid-column: span 3;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        &_link {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+    &_price {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #050505;
+    }
+
+    &_product_name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+
+    &_input {
+        grid-column: span 3;
+
+        &_number {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            width: 71px;                                                                                                                                                                                                                                                                                                                        
+            height: 51px;
+            background: #F7F6F6;
+            border-radius: 6px;
+            border: none;
+        }
+    }
+
+    &_button {
+        margin-top: 50px;
+
+        &_link {
+            box-sizing: border-box;
+            width: 200px;
+            height: 37px;
+            border: 1px solid #000000;
+            border-radius: 50px;
+            background: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            
+            &:hover {
+                background: #000000;
+                color: #FFFFFF;
+            }
+
+            &:active {
+                background-color: black;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+              }
+        }
+    }
+
+    &_form {
+        grid-column: span 4;
+        background: #F7F6F6;
+        border-radius: 20px;
+        padding-top: 42px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        &_title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            display: flex;
+            justify-content: center;
+            color: #000000;  
+        }
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 27px;
+    padding-right: 64px;
+
+    &_item {
+        outline: none;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #CACDD8; 
+        font-family: 'Montserrat', sans-serif; 
+        &::placeholder {
+            color: black;
+        }
+    }
+
+    &_value {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        text-align: center;
+        margin-top: 32px;
+
+        &_price {
+            font-weight: bold;
+        }
+    }
+
+    &_button {
+        width: 290px;
+        align-self: center;
+    }
+}
